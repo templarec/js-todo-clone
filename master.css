@@ -5,12 +5,19 @@
 }
 
 body {
-	font-family: "Arial Black";
+	font-family: "Arial";
 	font-size: 18px;
+	padding: 30px;
 }
 #template {
 	display: none;
 }
-#template input {
+#todo li input {
 	display: none;
+}
+#edit i {
+	color: darkgreen;
+}
+#delete i {
+	color: darkred;
 }
