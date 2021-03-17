@@ -31,6 +31,9 @@ $(document).ready(function () {
 			//mostro input dell' edit
 			var editInput = $(this).siblings('#insert');
 			editInput.show();
+			editInput.attr("placeholder", $(this).siblings('#titolo').text());
+			console.log($(this).siblings('#titolo').text());
+			//modifica con invio
 			editInput.keyup(function (e) {
 				if (e.which == 13){
 					var newText = editInput.val();

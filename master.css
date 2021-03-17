@@ -8,16 +8,40 @@ body {
 	font-family: "Arial";
 	font-size: 18px;
 	padding: 30px;
+	background-color: tan;
 }
 .to-do {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	flex-wrap: wrap;
+	border-radius: 20px;
+	background-color: #d98e8e;
+	padding: 50px 0;
+
+}
+.to-do #todoTitle {
+	margin-bottom: 10px;
+	font-size: 16px;
+	height: 30px;
+}
+.to-do [type="button"] {
+	width: 80px;
+	height: 35px;
 }
 .to-do ul {
+	text-align: center;
+	width: 80%;
+	margin-top: 30px;
 	padding: 20px 0;
 	list-style: none;
+	border-radius: 15px;
+	background-color: #f1cccc;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 }
 .to-do ul li:before {
 	color: darkorchid;
@@ -25,18 +49,25 @@ body {
 	font-family: "Font Awesome 5 Free";
 	font-weight: 900;
 	display: inline-block;
-	margin-left: -1.3em;
+	margin-left: -0.8em;
 	width: 1.3em;
 }
 .to-do ul li {
 	padding-left: 1.3em;
 	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-top: 2px;
 	margin-bottom: 15px;
-	box-shadow: 1px 1px 2px #555;
+	width: 60%;
+
+
 }
 .to-do ul li span#edit {
 	text-align: right;
 	padding-left: 20px;
+}
+#todo li #insert {
+	height: 25px;
 }
 #template {
 	display: none;
