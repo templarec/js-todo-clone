@@ -43,5 +43,11 @@ $(document).ready(function () {
 			});
 
 		});
+		var check = $('#completed');
+		check.click(function () {
+			$(this).parent().css({"textDecoration": "line-through", "color": "#aaa"});
+			$(this).parent().children('span').children('i').css("color","#aaa");;
+
+		});
 	});
 });
